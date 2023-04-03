@@ -14,10 +14,11 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #00FFFF;
+  --background-color: #FFFCCC;
+  --background-white: #FFFFFF;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #FF00FF;
+  --text-color: #000000;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -54,6 +55,10 @@ body {
 
 body.appear {
   display: unset;
+}
+
+.background-white {
+  background-color: var(--background-white);
 }
 
 header {
@@ -238,4 +243,15 @@ main .section[data-section-status='initialized'] {
 
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .section.dark {
+  background-color: var(--text-color);
+  color: var( --background-white);
+}
+
+
+.vertically-center-align {
+  display: flex;
+  align-items: center;
 }
